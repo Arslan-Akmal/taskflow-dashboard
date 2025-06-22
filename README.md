@@ -1,35 +1,77 @@
-# taskflow-dashboard
+# 🚀 TaskFlow Dashboard
 
-This template should help get you started developing with Vue 3 in Vite.
+TaskFlow is a role-based task management dashboard built with **Vue 3 + Firebase**. It allows users to register/login (including Google OAuth), create, assign, and manage tasks. Admins have additional privileges like assigning tasks to others.
 
-## Recommended IDE Setup
+## 🌐 Live Demo
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+🔗 [View Live App](https://taskflow-83dd3.web.app)
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠️ Tech Stack
 
-## Project Setup
+- **Frontend**: Vite + Vue 3 + Composition API
+- **Auth**: Firebase Authentication (Email/Password + Google)
+- **Database**: Firebase Firestore
+- **Hosting**: Firebase Hosting
 
-```sh
+---
+
+## 📦 Features
+
+- 🔐 User Authentication (Email & Google)
+- 👥 Role-based Access: Admin / Member
+- ✅ Create, Edit, Delete Tasks
+- 👨‍💼 Admins can assign tasks to users
+- 🖥 Responsive UI (Mobile + Desktop)
+- 🌍 Hosted on Firebase
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Arslan-Akmal/taskflow-dashboard.git
+cd taskflow-dashboard
 npm install
+
 ```
 
-### Compile and Hot-Reload for Development
+### 2. Firebase Configuration
 
-```sh
+Create a .env file in the root folder and add your Firebase config:
+
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
+
+## 3. Start the project
+
+npm start
+or
 npm run dev
-```
 
-### Compile and Minify for Production
+## 4. 📁 Project Structure
 
-```sh
-npm run build
-```
+pgsql
+Copy code
+src/
+assets/
+components/
+views/
+router/
+stores/
+firebase.js
+App.vue
+main.js
 
-### Lint with [ESLint](https://eslint.org/)
+## 5. 🙌 Author
 
-```sh
-npm run lint
-```
+Developed by Arslan Akmal
+Email: raja.arslanakmal786@gmail.com
